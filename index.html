@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen">
 </head>
-<body>
+<body class="body-container">
 
   <div class="header">
     <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix" class="header__demo-image">
@@ -16,9 +16,9 @@
 
   <div class="main-container">
     <div class="base-layout">
-      <h3>Add Item</h3>
-      <ul class="item-list">
-        <li class="item-list__item item-layout">
+      <h3 class="base-layout__title">Add Item</h3>
+      <ul class="item-list item-list--no-border">
+        <li class="item-list__item item-layout item-layout--edit">
           <input id="new-task-input" class="item-layout__edit-input" type="text">
           <button id="new-task-btn" class="btn btn--add">Add</button>
         </li>
@@ -26,39 +26,34 @@
     </div>
 
     <div class="base-layout">
-      <h3>Todo</h3>
+      <h3 class="base-layout__title">Todo</h3>
       <ul id="item-list-incomplete" class="item-list">
         <li class="item-list__item item-layout">
           <input type="checkbox" class="item-layout__checkbox">
           <label class="item-layout__title">Pay Bills</label>
           <input type="text" class="item-layout__edit-input">
-          <button class="btn btn--edit">Edit</button>
-          <button class="btn btn--remove">
-            <img src="./remove.svg" alt="remove-ico">
-          </button>
+          <button class="btn btn--edit"></button>
+          <button class="btn btn--remove"></button>
         </li>
         <li class="item-list__item item-layout item-layout--edit">
           <input type="checkbox" class="item-layout__checkbox">
           <label class="item-layout__title">Go Shopping</label>
-          <input type="text" class="item-layout__edit-input">
-          <button class="btn btn--edit">Edit</button>
-          <button class="btn btn--remove">
-            <img src="./remove.svg" alt="remove-ico">
-          </button>
+          <input type="text" class="item-layout__edit-input" value="Go Shopping">
+          <button class="btn btn--edit"></button>
+          <button class="btn btn--remove"></button>
         </li>
       </ul>
     </div>
 
     <div class="base-layout">
+      <h3 class="base-layout__title">Completed</h3>
       <ul id="item-list-complete" class="item-list item-list--linethrough">
         <li class="item-list__item item-layout">
           <input type="checkbox" class="item-layout__checkbox">
           <label class="item-layout__title">See the Doctor</label>
           <input type="text" class="item-layout__edit-input">
-          <button class="btn btn--edit">Edit</button>
-          <button class="btn btn--remove">
-            <img src="./remove.svg" alt="remove-ico">
-          </button>
+          <button class="btn btn--edit"></button>
+          <button class="btn btn--remove"></button>
         </li>
       </ul>
     </div>
