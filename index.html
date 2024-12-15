@@ -9,24 +9,24 @@
 </head>
 <body class="body-container">
 
-  <div class="header">
+  <header class="header">
     <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix" class="header__demo-image">
     <a href="https://goal-life.com/page/method/matrix-eisenhower" class="header__info-link">Want more details?</a>
-  </div>
+  </header>
 
-  <div class="main-container">
-    <div class="base-layout">
-      <h3 class="base-layout__title">Add Item</h3>
+  <main class="main-container">
+    <section class="base-layout">
+      <h2 class="base-layout__title">Add Item</h2>
       <ul class="item-list item-list--no-border">
         <li class="item-list__item item-layout item-layout--edit">
           <input id="new-task-input" class="item-layout__edit-input" type="text">
           <button id="new-task-btn" class="btn btn--add">Add</button>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="base-layout">
-      <h3 class="base-layout__title">Todo</h3>
+    <section class="base-layout">
+      <h2 class="base-layout__title">Todo</h2>
       <ul id="item-list-incomplete" class="item-list">
         <li class="item-list__item item-layout">
           <input type="checkbox" class="item-layout__checkbox">
@@ -43,22 +43,24 @@
           <button class="btn btn--remove"></button>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="base-layout">
-      <h3 class="base-layout__title">Completed</h3>
+    <section class="base-layout">
+      <h2 class="base-layout__title">Completed</h2>
       <ul id="item-list-complete" class="item-list item-list--linethrough">
         <li class="item-list__item item-layout">
-          <input type="checkbox" class="item-layout__checkbox">
+          <input type="checkbox" checked class="item-layout__checkbox">
           <label class="item-layout__title">See the Doctor</label>
           <input type="text" class="item-layout__edit-input">
           <button class="btn btn--edit"></button>
           <button class="btn btn--remove"></button>
         </li>
       </ul>
-    </div>
-  </div>
-
+    </section>
+  </main>
+<!--
   <script src="app.js"></script>
+-->
+  <script src="./script.js"></script>
 </body>
 </html>
